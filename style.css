@@ -1,0 +1,331 @@
+/*FUENTES*/
+.raleway{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*PAGINA WEB*/
+:root{
+    --primary:#f5f1e5;
+    --link:#337044;
+    --white: #ffff;
+    --black:#000000;
+}
+
+html{
+    background-color: var(--primary);
+    font-family: Raleway;
+    font-size: 15px;
+    padding: 34px;
+}
+
+/*HEADER SECTION*/
+header{
+    margin: 25px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    padding: 0px;
+    width: 33rem;
+    height: auto;
+}
+
+.under-logo img{
+    width: 68rem;
+    height: auto;
+}
+
+/*BODY*/
+h2{
+    font-family: pacifico;
+    font-weight: 600;
+}
+
+h3{
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: var(--link);
+}
+
+.sc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ubication{
+    height: 30px;
+    width: 170px;
+    border: 2px solid var(--link);
+    border-radius: 3px; 
+    padding: 17px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+}
+
+.ubication a{
+    display: block;
+    font-weight: 700;
+}
+
+.ubication:hover{
+    background-color: var(--link);
+}
+
+.ubication:hover a {
+    color: var(--white);
+}
+
+.info-u{
+    text-align: center;
+    padding: 17px;
+}
+
+.up{
+    margin: 0px 0px 4.5px;
+}
+
+.down{
+    margin: 24px 0px 0px;
+}
+
+.sc {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.sc .info-u {
+    margin-left: 32%;
+    margin-right: 32%; 
+    display: block; 
+}
+
+.rest-contacts nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.rest-contacts img {
+    width: 200px;
+    height: auto;
+}
+
+/*HISTORY*/
+
+.hist{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ship img{
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+}
+
+.paragraph{
+    text-align:justify;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph h2{
+    text-align: center;
+    font-size: 32px;
+}
+
+.paragraph p{
+    font-weight: 500;
+    margin: 0px 9% 20px 9%;
+}
+
+.bh-h{
+    text-align:justify;
+    justify-content: center;
+    align-items: center;
+}
+
+.bh-h h2{
+    text-align: center;
+    font-size: 32px;
+}
+
+.awards{
+    text-align: center;
+}
+
+.awards strong{
+    color: var(--link);
+    display: block;
+    font-size: 15px;
+    margin: 0px 29% 25px 29%;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email a {
+    background-color: var(--link);
+    color: var(--white);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.email a:hover {
+    background-color: #5b8b64;
+}
+
+.video{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -50px;
+}
+
+.inf-vid{
+    font-size: 12.375px;
+    font-weight: 500;
+    margin: 0px 0px 0px 81px;
+}
+
+.pg {
+    font-weight: 500;
+    margin: 10px 7% 20px 7%;
+}
+
+.img-ny {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vw; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px;
+    padding: 20px;
+}
+
+.img-ny div img {
+    width: 100%;
+    height: auto;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    height: 1000px;
+}
+
+.icons-link{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.icons-link strong{
+    padding: 20px;
+    margin-top: 40px;
+    text-decoration-thickness: 1px;
+}
+
+.icons-link strong a{
+        color: var(--black);
+        text-decoration: underline;
+}
+
+.icons-link strong a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.restaurants{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.restaurants img{
+    width: 100%;
+}
+
+/*RESPONSIVE*/
+
+
+@media (max-width: 954px) {
+    .img-ny,
+    .restaurants,
+    .rest-contacts nav {
+        grid-template-columns: 1fr; 
+        justify-items: center; 
+    }
+
+    .img-ny div img,
+    .restaurants img,
+    .rest-contacts img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .logo img,
+    .under-logo img {
+        width: 100%;
+        max-width: 500px; 
+        height: auto;
+    }
+
+    .video iframe {
+        width: 100%;
+        padding: 10px;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .inf-vid{
+        margin: 0px 0px 0px 50px;
+    }
+}
